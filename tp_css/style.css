@@ -1,0 +1,208 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    /* Eliminación de márgenes y padding predeterminados para todos los elementos */
+  }
+  
+  html {
+    height: 100vh;
+    width: 100vw;
+    /* Definición de altura y anchura completas para la raíz del documento */
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif; /* Fuente predeterminada */
+    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+    background-color: #ebebeb; /* Color de fondo del cuerpo de la página */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Configuración del cuerpo como un contenedor flex que se extiende en altura y se organiza en columnas */
+  }
+  header{
+    display: flex;
+    background-color: #383838;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .titulo_encabezado{
+    font-size: 2rem;
+  }
+.section{
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: .4rem;
+    padding: 1rem;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    flex-direction:row;
+    gap:1.5rem;
+    display:grid;
+    width: 80vw;
+    color: #1f1e1e;
+    text-align:start;
+    margin-bottom: 1.8rem;
+    
+}
+hr{
+    border: 0;
+    height: 1px;
+    background: #333;
+    width: 78vw;
+   
+
+}
+/*texto y blockquote*/
+.parrafo1{
+   
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-size:1rem;
+    
+}
+.blockquote1{
+    background-color: #e6e6e6;
+    font-size: 1rem;
+    color: #646464;
+    font-style: italic;
+    border-left: 5px solid #ccc;
+    padding-left: .4rem;
+}
+/*cajas*/
+.caja1{
+    margin: auto;
+    padding: .6rem;
+    border: 1px solid black;
+    border-radius: .4rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    width: 78vw;
+    height: 10vh;
+}
+.caja2{
+    margin: auto;
+    width: 78vw;
+    height: 10vh;
+    padding: .6rem;
+    border: 2px solid black;
+    border-radius: .4rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    background-color: #ffc549;
+}
+/*posicion relativa y absoluta*/
+.relative{
+  position: relative;
+  background-color: coral;
+  top: 1rem;
+  left: 0.4rem;
+  padding: .4rem;
+  margin-bottom: .4rem;
+  border-radius: .4rem;
+  width: 78vw;
+  
+}
+.absolute{
+  background-color: #4e50dd;
+  position: absolute;
+  left:20%;
+  z-index: 10;
+  border-radius: .4rem;
+  color: white;
+  padding: .4rem;
+}
+/*grid*/
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+  gap:1rem;
+  width: 78vw;
+}
+.grid_item{
+  background-color: #39afdd;
+  padding: .4rem;
+  border-radius: .4rem;
+  font-style:oblique;
+  font-weight: bold;  /* Pone el texto en negrita */
+  text-align: center;
+  color: #ffffff;
+}
+/*animacion*/
+.animaciones{
+  display: flex;
+  justify-content: start;
+  align-items:flex-start;
+  flex-direction: column;
+  
+}
+.animacion{
+  border: none;
+  padding:.4rem;
+  margin:.4rem;
+  background-color: red;
+  height: 20vh;
+  width: 15vw;
+  transition: .3s ease;
+ 
+}
+.animacion:hover{
+  cursor: pointer;
+  background-color: #1115fd;
+}
+.mover{
+  border:none;
+  border-radius: 100%;
+  background-color: #00b947;
+  width: 14vw;
+  height: 20vh;
+  margin: 2rem;
+  animation: moviendo 1.5s infinite;
+}
+@keyframes moviendo{
+  0%{
+      transform:translateX(0);
+  }
+  50%{
+      transform:translateX(100px);
+  }
+  100%{
+      transform:translateX(0px);
+  }
+}
+/*mediaquerie*/
+@media screen and (max-width:768px) {
+  body{
+background-color: #f37d7d;
+  }
+  header{
+    background-color: #4763ff;
+    margin-bottom: 1rem;
+  }
+  .titulo_encabezado{
+    font-size: 1.5rem;
+  }
+  .section{
+    background-color: #fcd0d0;
+    width: auto;
+    height: auto;
+    font-size: .8rem;
+    margin-bottom: 1.6rem;
+  }
+  .grid_item{
+    background-color: #ffffff;
+    color: #39afdd;
+    border: 1px solid #39afdd;
+  }
+  .animacion{
+    width: 10vw;
+    height: 10vh;
+  }
+  .mover{
+    width: 8vw;
+    height: 8vh;
+  }
+}
