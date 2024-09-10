@@ -1,0 +1,31 @@
+
+    /* Estilos iniciales */
+    p {
+      font-size: 16px;
+      color: black; /* Color inicial de los párrafos */
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    /*cambiando el color al parrafo*/
+    .blueP{
+      color: blue;
+    }
+    li{
+      transition: .3s ease;
+    }
+    li:hover{
+      cursor: pointer;
+    }
+    
+    button{
+      transition: .3s ease;
+    }
+    button:hover{
+      cursor: pointer;
+    }
+    .ejer8_2{
+    
+      padding: .4rem;
+      gap:1rem;
+      display: flex;
+      flex-direction: column;
+    }

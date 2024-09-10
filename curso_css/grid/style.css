@@ -1,0 +1,25 @@
+.container_grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);/**palabra reservada, ponemos el valor que nosotros queremos y el tamaño*/
+    /*grid-template-columns: 1fr 1fr;/*define el ancho de cada columna de nuestra guia de grids, si quisieramos solo una columna pondriamos un 100px// 1fr es el ancho total de nuestro contenedor /
+    grid-template-rows: 200px auto;*/
+    width: 90vw;
+    height: 90vh;/*
+    justify-items: start;/*forma horizontal/
+    align-items: end;*/
+    gap: 1rem;
+}
+.container_grid div{
+    background-color: #ff4b4b;
+    border: 1px solid #000000;/*
+    width: 200px;
+    height: 100px;*/
+}
+.elemento1{
+    grid-column: 1/3;
+}
+.elemento2{
+    grid-column: 1/4;
+    grid-row: 2/4;
+}
+/*se utiliza mas que nada para dar estructura a elementos grandes de nuestra pag y flex se utiliza un pco mas para lo que es ubicar elementos mucho mas pequeños pero ambos se pueden ocupar para las dos cosas*/

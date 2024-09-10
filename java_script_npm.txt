@@ -1,0 +1,3 @@
+en node_modules:estan todas las dependencias de nuestro proyecto en si.
+en public:estan todos los elementos puiblicos de nuestra aplicacion.
+en gitignore: es por si estuveramos ocupando git para que los archivos no se suban

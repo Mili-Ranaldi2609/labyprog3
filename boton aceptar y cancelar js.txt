@@ -1,0 +1,119 @@
+function saludarUser() {
+  const nombre =prompt("¿Cual es tu nombre?") // Obtenemos el valor del campo en la función
+  if (nombre.trim() === "") {
+    console.log("Ingrese su nombre");
+  } else {
+    console.log("Hola, ", nombre);
+  }
+}
+/*
+// Evento para el botón "Aceptar"
+document.getElementById("aceptar").addEventListener("click", () => {
+  saludarUser();
+});
+
+// Evento para el botón "Cancelar"
+document.getElementById("cancelar").addEventListener("click", () => {
+  document.getElementById("name").value = ""; //Esto toma el campo de texto con ID name y establece su valor a una cadena vacía, lo que hace que el texto desaparezca. Es lo que ocurre cuando haces clic en "Cancelar".
+  console.log("El nombre ha sido borrado");
+});*/
+function imparOpar(){
+ const numero=document.getElementById("number").value
+ if (numero=== "") {
+  console.log("Ingrese un numero");
+} else {
+  const numeroConvertido = parseInt(numero);  // Convertimos el valor a un número entero
+  if(numeroConvertido%2===0){
+    console.log("El numero", numeroConvertido,"es par");
+  }else{
+    console.log("El numero",numeroConvertido,"es impar");   
+  }
+}
+}
+// Evento para el botón "Aceptar"
+document.getElementById("aceptar2").addEventListener("click", () => {
+  imparOpar()
+});
+
+// Evento para el botón "Cancelar"
+document.getElementById("cancelar2").addEventListener("click", () => {
+  document.getElementById("number").value = ""; //Esto toma el campo de texto con ID name y establece su valor a una cadena vacía, lo que hace que el texto desaparezca. Es lo que ocurre cuando haces clic en "Cancelar".
+  console.log("El numero ha sido borrado");
+});*/
+style:::::::::::::::::::::::
+.container{
+  display: flex;
+  margin: 1rem;
+  background-color: rgb(7, 7, 7);
+  color: white;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  width: 45vw;
+  padding: .4rem;
+  border-radius: .4rem;
+}
+#aceptar{
+  background-color: rgb(140, 4, 219);
+  border: none;
+  border-radius: .4rem;
+  padding: .3rem;
+  color: white;
+  transition: .3s ease;
+}
+#cancelar{
+  background-color: rgb(30, 29, 31);
+  border: none;
+  border-radius: .4rem;
+  padding: .3rem;
+  color: white;
+  transition: .3s ease;
+
+}
+#cancelar:hover{
+  cursor: pointer;
+}
+#aceptar:hover{
+  cursor: pointer;
+}
+#name{
+  background-color: transparent;
+  border:none;
+  border-radius: .4rem;
+  border: 1px solid black;
+  box-shadow: 5px 4px 10px 2px transparent;
+  color: white;
+}
+
+#aceptar2{
+  background-color: rgb(140, 4, 219);
+  border: none;
+  border-radius: .4rem;
+  padding: .3rem;
+  color: white;
+  transition: .3s ease;
+}
+#cancelar2{
+  background-color: rgb(30, 29, 31);
+  border: none;
+  border-radius: .4rem;
+  padding: .3rem;
+  color: white;
+  transition: .3s ease;
+
+}
+#cancelar2:hover{
+  cursor: pointer;
+}
+#aceptar2:hover{
+  cursor: pointer;
+}
+#number{
+  background-color: transparent;
+  border:none;
+  border-radius: .4rem;
+  border: 1px solid black;
+  box-shadow: 5px 4px 10px 2px transparent;
+  color: white;
+}

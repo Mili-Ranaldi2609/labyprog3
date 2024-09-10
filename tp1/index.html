@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Práctico de HTML</title>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Trabajo Práctico de HTML</h1>
+    </header>
+
+    <!-- Navegación -->
+    <nav>
+        <ul>
+            <li><a href="#estructura">Estructura</a></li>
+            <li><a href="#multimedia">Multimedia</a></li>
+            <li><a href="#formulario">Formulario</a></li>
+            <li><a href="#semantica">Semántica en HTML</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de Estructura Básica -->
+    <section id="estructura">
+        <h2>1. Estructura Básica del Documento HTML</h2>
+        <p>Este documento HTML tiene una estructura básica que incluye la declaración de DOCTYPE, etiquetas de metadatos
+            y un título.</p>
+
+        <h3>2. Encabezados y Propiedades del Texto</h3>
+        <div>
+            <p style="font-weight: bold;">Este es un texto en negrita.</p>
+            <p style="font-style: italic;">Este es un texto en cursiva.</p>
+            <p style="text-decoration: underline;">Este es un texto subrayado.</p>
+        </div>
+
+        <h3>3. Divisiones y Agrupación de Contenido</h3>
+        <div>
+            <h4>Sección 1</h4>
+            <p>Contenido de la primera sección agrupada en un <code>div</code>.</p>
+        </div>
+        <div>
+            <h4>Sección 2</h4>
+            <p>Contenido de la segunda sección agrupada en un <code>div</code>.</p>
+        </div>
+
+        <h3>4. Enlaces y Listas</h3>
+        <p>Visita nuestro <a href="https://www.ejemplo.com">sitio web</a> para más información.</p>
+        <p>Enlaces internos:</p>
+        <ul>
+            <li><a href="#estructura">Ir a Estructura</a></li>
+            <li><a href="#multimedia">Ir a Multimedia</a></li>
+            <li><a href="#formulario">Ir a Formulario</a></li>
+        </ul>
+        <p>Lista desordenada:</p>
+        <ul>
+            <li>Primer ítem de una lista desordenada</li>
+            <li>Segundo ítem de una lista desordenada</li>
+        </ul>
+        <p>Lista ordenada:</p>
+        <ol>
+            <li>Primer ítem de una lista ordenada</li>
+            <li>Segundo ítem de una lista ordenada</li>
+        </ol>
+    </section>
+
+    <!-- Sección de Elementos Multimedia -->
+    <section id="multimedia">
+        <h2>5. Elementos Multimedia</h2>
+        <img src="imagen.jpg" alt="Descripción de la imagen">
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </section>
+
+    <!-- Sección de Tablas -->
+    <section>
+        <h2>6. Tablas</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Columna 1</th>
+                    <th>Columna 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dato 1</td>
+                    <td>Dato 2</td>
+                </tr>
+                <tr>
+                    <td>Dato 3</td>
+                    <td>Dato 4</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Sección de Formularios -->
+    <section id="formulario">
+        <h2>7. Formularios</h2>
+        <form action="/submit" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Sección de Semántica en HTML -->
+    <section id="semantica">
+        <h2>8. Semántica en HTML</h2>
+        <p>En este documento se ha respetado la semántica del HTML utilizando etiquetas como
+            <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, y
+            <code>&lt;footer&gt;</code> para estructurar correctamente el contenido.
+        </p>
+        <p>Las etiquetas semánticas facilitan la comprensión del contenido tanto para los usuarios como para los motores
+            de búsqueda, mejorando la accesibilidad y el SEO.</p>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Trabajo Práctico de HTML</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+.lista-tareas{
+    background-color: #c9fceb;
+    border: 1px solid black;
+    padding: .4rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    gap:1vh;
+    margin-top: 2vh;
+}
+.tarea{
+    padding: 0.4rem;
+    border: 1px solid black;
+    width: 80%;
+    text-align: center;
+}
+.completed{
+    background-color: greenyellow;
+}
+.incompleted{
+    background-color: #ff6565;
+}
+button{
+    padding: .4rem;
+    border:none;
+    margin-top: 10px;
+    color: white;
+    background-color: blueviolet;
+    border-radius: .4rem;
+}

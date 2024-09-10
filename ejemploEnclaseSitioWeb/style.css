@@ -1,0 +1,219 @@
+:root {
+    --bgColor: #f4f4f4; /* Color de fondo claro */
+    --bgColorOscuro: #333; /* Color de fondo oscuro */
+    --colorTexto: #fff; /* Color del texto claro */
+    --colorTextoOscuro: #333; /* Color del texto oscuro */
+    --colorBanner: #ff5733; /* Color del banner */
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    /* Eliminación de márgenes y padding predeterminados para todos los elementos */
+  }
+  
+  html {
+    height: 100vh;
+    width: 100vw;
+    /* Definición de altura y anchura completas para la raíz del documento */
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif; /* Fuente predeterminada */
+    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+    background-color: var(--bgColor); /* Color de fondo del cuerpo de la página */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Configuración del cuerpo como un contenedor flex que se extiende en altura y se organiza en columnas */
+  }
+  
+  /* COMENZAMOS CON EL HEADER */
+  
+  header {
+    background-color: var(--bgColorOscuro); /* Color de fondo oscuro para el encabezado */
+    display: flex;
+    justify-content: center;
+    /* Encabezado centrado horizontalmente */
+  }
+  
+  /* CLASES GENERICAS */
+  
+  .centradoHorizontalFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Clase genérica para centrar contenido horizontal y verticalmente usando flexbox */
+  }
+  
+  .contenedor__nav {
+    display: flex;
+    color: var(--colorTexto); /* Color de texto claro */
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    /* Contenedor de navegación con elementos distribuidos uniformemente */
+  }
+  
+  .titulo__nav {
+    font-size: 2rem; /* Tamaño de fuente del título de navegación */
+  }
+  
+  .lista__nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 1.4rem;
+    /* Lista de navegación alineada horizontalmente con espacio entre los elementos */
+  }
+  
+  .link__nav {
+    text-decoration: none; /* Eliminación del subrayado en los enlaces */
+    color: var(--colorTexto); /* Color de texto de los enlaces */
+    padding: 0.4rem;
+    transition: background-color 0.3s ease;
+    /* Efecto de transición suave al cambiar el color de fondo */
+  }
+  
+  .link__nav:hover {
+    background-color: #555; /* Color de fondo al pasar el cursor por encima del enlace */
+    border-radius: 0.4rem; /* Bordes redondeados en el fondo del enlace */
+  }
+  
+  .menu__nav {
+    display: none; /* Menú oculto por defecto, se mostrará en dispositivos móviles */
+  }
+  
+  /* MAIN */
+  
+  .main__contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 4vh;
+    /* Contenedor principal centrado y con un margen superior */
+  }
+  
+  .contenedor__main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    /* Contenedor del contenido principal, con elementos centrados y un espaciado vertical */
+  }
+  
+  /* BANNER */
+  .banner__main {
+    background-color: var(--colorBanner); /* Color de fondo del banner */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: center;
+    color: var(--colorTexto); /* Color del texto del banner */
+    border-radius: 0.4rem;
+    padding: 2rem 1.2rem;
+    /* Banner centrado con texto y botón, con bordes redondeados */
+  }
+  
+  .titulo__banner {
+    font-size: 2.5rem; /* Tamaño de fuente del título del banner */
+  }
+  
+  .descripcion__banner {
+    font-size: 1.5rem; /* Tamaño de fuente de la descripción del banner */
+  }
+  
+  .button__banner {
+    background-color: var(--bgColorOscuro); /* Color de fondo del botón del banner */
+    color: var(--colorTexto); /* Color de texto del botón */
+    padding: 0.4rem;
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 1.1rem; /* Tamaño de fuente del botón */
+  }
+  
+  .button__banner:hover {
+    background-color: #555; /* Color de fondo al pasar el cursor por encima del botón */
+    border-radius: 0.4rem;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  }
+  
+  /* CARACTERISTICAS */
+  
+  .caracteristicas__section {
+    width: 100%;
+    margin-bottom: 2vh; /* Margen inferior de la sección de características */
+  }
+  
+  .caracteristicas__section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    /* Título de la sección de características, centrado horizontalmente */
+  }
+  
+  .caracteristicas__contenedor {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    /* Contenedor de las características usando Grid con tres columnas */
+  }
+  
+  .caracteristicas {
+    background-color: var(--bgColor); /* Color de fondo de cada característica */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4); /* Sombra para dar efecto de elevación */
+    padding: 0.4rem;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0.4rem;
+    /* Cada característica está centrada con un fondo claro y bordes redondeados */
+  }
+  
+  /* FOOTER */
+  
+  .footer__contenedor {
+    background-color: var(--bgColorOscuro); /* Color de fondo oscuro para el pie de página */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* Contenedor del pie de página centrado horizontal y verticalmente */
+  }
+  
+  .footer__contenedor p {
+    color: var(--colorTexto); /* Color del texto en el pie de página */
+    text-align: center;
+    /* Texto centrado en el pie de página */
+  }
+  
+  /* MEDIAQUERYS */
+  
+  @media screen and (max-width: 750px) {
+    .caracteristicas__contenedor {
+      grid-template-columns: repeat(1, 1fr);
+      /* En pantallas pequeñas, las características se muestran en una sola columna */
+    }
+  
+    .menu__nav {
+      display: block;
+      cursor: pointer;
+      /* El menú de navegación se muestra como un ícono en pantallas pequeñas */
+    }
+  
+    .lista__nav {
+      display: none;
+      /* Oculta la lista de navegación en pantallas pequeñas */
+    }
+  }

@@ -1,0 +1,36 @@
+.container{
+    background-color: orange;
+    border: 1px solid black;
+    padding: .4rem;
+    height: 30vh;
+    width: 100vw;
+    display:flex;
+    flex-direction: row;
+    
+    /*
+    column
+    row uno al lado del otro
+    column-reverse lo pone al revez
+    row-reverse */
+    justify-content: center;
+    /*flex-star los deja al principio
+    flex-end los deja al final
+    baseline todos los elementos se centran y quedan a la misma altura 
+    space-around respeta espacios entre caja y caja y tambien en los laterales 
+    space-between se separarian lo mas que puedan */
+    align-items: flex-center;
+    /*flex end los lleva abajo
+    flex star los lleva arriba*/
+    gap: 2vh /*espacio entre los elementos*/;
+}
+.element{
+    border: 1px solid black;
+    margin: .4rem;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+.container{
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box{
+    border: none;
+    padding: .4rem;
+    margin: 2rem;
+    background-color: #771dec;
+    color:white;
+    border-radius: .4rem;
+    width: 200px;
+    text-align: center;
+    height: 26px;
+    font-size: 1.4rem;
+    transition: .3s ease;/*sirve para la transicion*/
+}
+.box2{
+    border: none;
+    padding: .4rem;
+    margin: 2rem;
+    background-color: #771dec;
+    color:white;
+    border-radius: .4rem;
+    width: 200px;
+    text-align: center;
+    height: 26px;
+    font-size: 1.4rem;
+    animation: mover 1s infinite;/*se puede poner linear*/
+    
+}
+.box:hover{
+    cursor: pointer;/*cuando el cursor esta por encima se pone la manito*/
+    background-color: #ffffff;
+    border: 1px solid #771dec;
+    color: black;
+}/*hover propiedad cuando el cursor pasa por encima*/
+@keyframes mover{
+    0%{
+        transform:translateX(0);
+    }
+    50%{
+        transform:translateX(100px);
+    }
+    100%{
+        transform:translateX(0px);
+    }
+}
